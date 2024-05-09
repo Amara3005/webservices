@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>User Page</title>
+  </head>
+  
+  <body>
+     
+     <form method="POST" th:action="@{/register}" id="registerForm">
+        <label for="user_id">Username: </label>
+        <input type="text" name="user_id"/><br/>
+        
+        <label for="name">Full name: </label>
+        <input type="text" name="name"/><br/>
+        
+        <label for="Dob">Dob: </label>
+        <input type="text" name="Dob"/><br/>
+        
+        <input type="submit" value="Register"/>
+    </form>
+     </body>
+     
+</html>
