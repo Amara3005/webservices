@@ -5,6 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import com.in28minutes.rest.webservices.restfulwebservices.user.userF;
 
 
-public interface UserRepository extends CrudRepository<userF, Long> {
-	userF findByUsername(String username);  
+public interface UserRepository extends CrudRepository<userF,Integer> {
+	userF findByUsername(int username);  
 }

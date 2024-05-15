@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 import java.time.LocalDate;
 
 @Entity
-@Data
+//@Data
 //@NoArgsConstructor(access=AccessLevel.PRIVATE, force=true) 
 //@RequiredArgsConstructor
 public class userF {
@@ -19,15 +19,15 @@ public class userF {
 	//private static final long serialVersionUID = 1L;
 	
 	  @Id
-	  @GeneratedValue(strategy=GenerationType.AUTO)
-	private Long id;
-	private String username;
+	 //@GeneratedValue(strategy=GenerationType.AUTO)
+	//private Long id;
+	private int username;
 	private String name;     
     private LocalDate dob;
 	
     
-    public userF(String username, String name, LocalDate dob) {
-		super();
+    public userF(int username, String name, LocalDate dob) {
+    	super();
 		this.username =username;
 		this.name = name;
 		this.dob = dob;
@@ -40,10 +40,10 @@ public class userF {
 	}
 
 
-	public String getUser_id() {
+	public int getId() {
 		return username;
 	}
-	public void setUser_id(String username) {
+	public void setId(int username) {
 		this.username =username;
 	}
 	
